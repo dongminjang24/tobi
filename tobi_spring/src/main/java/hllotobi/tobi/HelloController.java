@@ -14,7 +14,7 @@ import java.util.Objects;
 public class HelloController {
 
 
-    private ApplicationContext applicationContext;
+//    private ApplicationContext applicationContext;
     private final HelloService helloService;
 
     public HelloController(HelloService helloService) {

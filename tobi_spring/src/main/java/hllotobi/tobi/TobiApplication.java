@@ -13,19 +13,9 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-@Configuration
-@ComponentScan
+@MySpringBootApplication
 public class TobiApplication {
 
-    @Bean
-    public ServletWebServerFactory servletWebServerFactory(){
-        return new TomcatServletWebServerFactory();
-    };
-
-    @Bean
-    public DispatcherServlet dispatcherServlet(){
-        return new DispatcherServlet();
-    };
 
     public static void main(String[] args) {
 //        MySpringApplication.run(TobiApplication.class,args);
