@@ -1,9 +1,8 @@
-package hllotobi.tobi;
+package hllotobi.config;
+
 
 import hllotobi.config.autoConfig.DispatcherServletConfig;
 import hllotobi.config.autoConfig.TomcatWebServerConfig;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
@@ -13,8 +12,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@ComponentScan
-@Configuration
-@Import({DispatcherServletConfig.class, TomcatWebServerConfig.class})
-public @interface MySpringBootApplication {
+@Import(MyAutoConfigImportSelector.class)
+public @interface EnableMyAutoConfiguration {
 }
