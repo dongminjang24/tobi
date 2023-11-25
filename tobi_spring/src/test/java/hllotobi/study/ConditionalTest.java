@@ -32,9 +32,9 @@ public class ConditionalTest {
         } );
 
         //true
-//        AnnotationConfigApplicationContext ac1 = new AnnotationConfigApplicationContext();
-//        ac1.register(Config1.class);
-//        ac1.refresh();
+        AnnotationConfigApplicationContext ac1 = new AnnotationConfigApplicationContext();
+        ac1.register(Config1.class);
+        ac1.refresh();
 
 
 
@@ -43,7 +43,7 @@ public class ConditionalTest {
 //        ac2.register(Config2.class);
 //        ac2.refresh();
 
-//        MyBean bean1 = ac1.getBean(MyBean.class);
+        MyBean bean1 = ac1.getBean(MyBean.class);
 //        MyBean bean2 = ac2.getBean(MyBean.class);
     }
 
