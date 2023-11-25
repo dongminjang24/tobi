@@ -1,2 +1,3 @@
 hllotobi.config.autoConfig.DispatcherServletConfig
 hllotobi.config.autoConfig.TomcatWebServerConfig
+hllotobi.config.autoConfig.JettyWebServerConfig
